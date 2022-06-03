@@ -20,6 +20,10 @@ Scanner entrada = new Scanner(System.in);
 	float p4 = (float) 2.90; //PREÇO GOIANA
 	float q5 = (float) 0; //QUANT MAMÃO
 	float p5 = (float) 3.50; //PREÇO MAMÃO
+	float q15 = (float) 0; //QUANT MELANCIA
+	float p15 = (float) 8.5; //PREÇO MELANCIA
+	
+	
 		//VARIÁVEIS CORREDOR CASA
 	float q6 = (float) 0; //QUANT CADEIRA
 	float p6 = (float) 25.50; //PREÇO CADEIRA
@@ -67,7 +71,8 @@ Scanner entrada = new Scanner(System.in);
 						System.out.println("2 - Maça");
 						System.out.println("3 - Melão");
 						System.out.println("4 - Goiaba");
-						System.out.println("5 - Mamão");		
+						System.out.println("5 - Mamão");	
+						System.out.println("6 - Melancia");
 								
 					
 							int numero = entrada.nextInt();
@@ -105,6 +110,13 @@ Scanner entrada = new Scanner(System.in);
 									System.out.println("Quantos quilos deseja?");
 									q5 = entrada.nextFloat();
 									System.out.println("total do produto = R$"+q5*p5);	
+									break;	
+									
+								case 6:
+									System.out.println("Melancia");
+									System.out.println("Quantos quilos deseja?");
+									q5 = entrada.nextFloat();
+									System.out.println("total do produto = R$"+q15*p15);	
 									break;	
 									
 									default:
@@ -214,7 +226,7 @@ Scanner entrada = new Scanner(System.in);
 															
 						}
 			}else {
-				System.out.println("Compra finalizada.Total a pagar: R$"+(q2*p2+q1*p1+q3*p3+q4*p4+q5*p5+q6*p6+q7*p7+q8*p8+q9*p9+q10*p10+p11*q11+q12*p12+q13*p13+p14*q14));
+				System.out.println("Compra finalizada.Total a pagar: R$"+(q2*p2+q1*p1+q3*p3+q4*p4+q5*p5+q6*p6+q7*p7+q8*p8+q9*p9+q10*p10+p11*q11+q12*p12+q13*p13+p14*q14+q15*p15));
 				
 			}
 	}//FIM DO WHILE		
